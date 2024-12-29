@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: greenyellow;
+            padding: 20px;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #ff5722;
+        }
+        img {
+            margin-top: 20px;
+            border-radius: 50%;
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday!</h1><h3 style="color: blue;"><marquee>Mary Mwale wishing you Happy more returns in 2025</marquee></h3>
+    <img src="m.jpg" alt="Birthday Person" id="birthdayImage">
+    <form id="birthdayForm">
+        <h1 style="color: crimson;">How old are you now Mary? click the button down to see how old you are.</h1>
+        <button type="button" onclick="displayMessage()" style="background-color: white;color: crimson;font-size: large;">Click me</button>
+    </form>
+    <div class="message" id="birthdayMessage"></div>
+
+    <script>
+        function displayMessage() {
+            const messageDiv = document.getElementById('birthdayMessage');
+            messageDiv.textContent = "Happy Birthday Mary Mwale! You are now 29 years old.";
+        }
+    </script>
+</body>
+</html>
